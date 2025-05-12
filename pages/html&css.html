@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+    <!-- load the the layout in page  -->
+    <script src="/assets/js/layout-loader.js" defer></script>
+    <!-- randaring normally for all element -->
+    <link rel="stylesheet" href="/assets/css/normalmize.css" />
+    <!-- google font page  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FONT AWESOME library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- styling for compopnents  -->
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <!-- styling layout and responsive page  -->
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <!-- styling main page  -->
+    <link rel="stylesheet" href="/assets/css/html&css.css">
+</head>
+
+<body>
+    <div class="page">
+        <div id="header"></div>
+        <div id="main" class="container">
+            <div class="intro">
+                <div class="logo"><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3"></i></div>
+                <h2>HTML & CSS</h2>
+                <P>This page displays a comprehensive and organized list of HTML and CSS tasks in a clear and
+                    easy-to-navigate manner, allowing users to quickly and efficiently browse tasks.</P>
+            </div>
+            <div id="task1" class="task task-1">
+                <h2>Task 1</h1>
+                    <div class="content">
+                        <div class="box">
+                            <input type="checkbox" id="binary">
+                            <label for="binary">
+                                <span></span>
+                                <i class="fa-brands fa-windows"></i>
+                                <span>Binary</span>
+                            </label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Schema">
+                            <label for="Schema">
+                                <span></span>
+                                <i class="fa-solid fa-code-pull-request"></i>
+                                <span>Schema</span>
+                            </label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Drawing">
+                            <label for="Drawing">
+                                <span></span>
+                                <i class="fa-solid fa-pen-ruler"></i>
+                                <span>Drawing</span>
+                            </label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Web" checked>
+                            <label for="Web">
+                                <span></span>
+                                <i class="fa-regular fa-window-restore"></i>
+                                <span>Web</span>
+                            </label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Bug">
+                            <label for="Bug">
+                                <span></span>
+                                <i class="fa-solid fa-bug"></i>
+                                <span>Bug</span>
+                            </label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Cloud">
+                            <label for="Cloud">
+                                <span></span>
+                                <i class="fa-solid fa-cloud"></i>
+                                <span>Cloud</span>
+                            </label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Coding" checked>
+                            <label for="Coding">
+                                <span></span>
+                                <i class="fa-solid fa-code"></i>
+                                <span>Coding</span>
+                            </label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Puzzle">
+                            <label for="Puzzle">
+                                <span></span>
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <span>Puzzle</span>
+                            </label>
+                        </div>
+                    </div>
+            </div>
+            <div id="task2" class="task task-2">
+                <h2>Task 2</h1>
+                    <div class="content">
+                        <div>
+                            <div class="picture">
+                                <img src="/assets/images/fitness-beach.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="con">
+                            <h2>
+                                We Are Here To Dream!Our Team Is Here Surve You
+                            </h2>
+                            <a href="#">about us</a>
+                            <p>At vero eos et accusamus et iusto odio digani goikussimos ducimus qui to bonfoe
+                                blanditiis praese.Ntium voluum deleniti atque corrupti quos.of a page a reload when
+                                looking at its layout.The point of using Lorem lpsum is that it has pi motivate
+                                re-or-less normal distribution</p>
+                            <div class="boxes">
+                                <div class="box">
+                                    <img src="/assets/images/gym.png" alt="">
+                                    <p>Visit Our Gym</p>
+                                </div>
+                                <div class="box">
+                                    <img src="/assets/images/dumbell.png" alt="">
+                                    <p>Work Out</p>
+                                </div>
+                                <div class="box">
+                                    <img src="/assets/images/weightlift.png" alt="">
+                                    <p>Get Result</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="task3" class="task task-3">
+                <h2>Task 3</h1>
+                    <div class="content">
+                        <H2>Buy The Course <i class="fa-solid fa-handshake-simple"></i></H2>
+                        <p>Join over 2,300 develpers who have already stepped up their database performance game!</p>
+                        <div class="packages">
+                            <div class="package">
+                                <h3><i class="fa-solid fa-star"></i> Premium Package</h3>
+                                <ul class="features">
+                                    <li>Access to a total of 28 lessons</li>
+                                    <li>Includes 6 additional advanced lessons on natural sorting,full-text searching
+                                        and geospatial queries</li>
+                                    <li>Full source code for all lessons , including MySQL,Postgres and SQLite versions
+                                        (Where possible)</li>
+                                    <li>Over Two Full Hours Of Video Content</li>
+                                    <li>Stream online or download videos</li>
+                                </ul>
+                                <div class="buy">
+                                    <p class="price">
+                                        <span>$</span>
+                                        149
+                                        <span>USD</span>
+                                    </p>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                                <p>Buying for your ?<a href="">View the team pricing</a></p>
+                            </div>
+                            <div class="package">
+                                <h3><i class="fa-solid fa-check"></i>Essentials Package</h3>
+                                <ul class="features">
+                                    <li>Access to the first 22 lessons</li>
+                                    <li>Just under two hours of video content</li>
+                                    <li>Stream online or download videos</li>
+                                </ul>
+                                <div class="buy">
+                                    <p class="price">
+                                        <span>$</span>
+                                        99
+                                        <span>USD</span>
+                                    </p>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+             <div id="task4" class="task task-4">
+                <h2>Task 4</h2>
+                <div class="content">
+                    <img src="images/person-blue-shirt.png" alt="">
+                    <h2>Ali Mohammed</h2>
+                    <h3>Full Stack Web Developer</h3>
+                    <ul>
+                        <li><span>Facebook</span><span>Ali mohammed</span></li>
+                        <li><span>Twitter</span><span>Ali mohammed</span></li>
+                        <li><span>Linkedin</span><span>Ali mohammed</span></li>
+                    </ul>
+                    <span>A+</span>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

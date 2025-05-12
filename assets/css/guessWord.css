@@ -1,0 +1,216 @@
+h1 {
+    text-align: center;
+    margin: 0;
+    background-color: #eee;
+    padding: 13px;
+    font-weight: 600;
+}
+
+
+.guss-game {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 80px 0;
+}
+
+@media (max-width:768px) {
+    .guss-game {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+}
+
+.guss-game .game {
+    flex: 2;
+}
+
+
+.guss-game .game .inputs>div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.guss-game .game .inputs>div.disabled-inputs {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.guss-game .game .inputs>div span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.guss-game .game .inputs>div input {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-bottom: 3px solid var(--green-color);
+    background-color: #eee;
+    font-size: 50px;
+    caret-color: var(--green-color);
+    color: #4f4b4b;
+    text-align: center;
+}
+
+@media (max-width:425px) {
+    .guss-game .game .inputs>div input {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+
+    .guss-game .game .inputs>div span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:375px) {
+    .guss-game .game .inputs>div input {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+    }
+
+    .guss-game .game .inputs>div span {
+        font-size: 8px;
+    }
+}
+
+.guss-game .game .inputs>div input.in-place {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.guss-game .game .inputs>div input.not-place {
+    background-color: #e3e31f;
+    color: white;
+}
+
+.guss-game .game .inputs>div input.no {
+    background-color: #ff6060;
+    color: white;
+}
+.guss-game .game .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 63%;
+    margin: auto;
+}
+
+@media (max-width:1024px) {
+    .guss-game .game .controls {
+        width: 90%;
+    }
+}
+
+@media (max-width:425px) {
+    .guss-game .game .controls {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.guss-game .game .controls .check {
+    flex: 1;
+    background-color: #ff6060;
+}
+
+.guss-game .game .controls .check:hover {
+    background-color: #b85e5e;
+}
+
+.guss-game .game .controls .hint {
+    background-color: #87c487;
+}
+
+.guss-game .game .controls .hint:hover {
+    background-color: rgb(76, 156, 76);
+}
+
+.guss-game .game .controls .check,
+.guss-game .game .controls .hint {
+    padding: 9px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (max-width:425px) {
+
+    .guss-game .game .controls .check,
+    .guss-game .game .controls .hint {
+        width: 100%;
+    }
+}
+
+.guss-game .game .controls .check:disabled,
+.guss-game .game .controls .hint:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.guss-game .game .message,.hint-message {
+    margin: 32px auto;
+    width: fit-content;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.guss-game .game .message span {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: var(--green-color);
+}
+
+.guss-game .key-color {
+    flex: 1;
+}
+
+.guss-game .key-color h2 {
+    text-align: center;
+    margin-bottom: 17px;
+    font-weight: 600;
+}
+
+.guss-game .key-color .key {
+    background-color: #eee;
+    padding: 15px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.guss-game .key-color .key span {
+    width: 30px;
+    height: 30px;
+}
+
+.guss-game .key-color .key.in-place span {
+    background-color: #4CAF50;
+}
+
+.guss-game .key-color .key.not-place span {
+    background-color: #e3e31f;
+}
+
+.guss-game .key-color .key.no span {
+    background-color: #ff6060;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- load the the layout in page  -->
+    <script src="assets/js/layout-loader.js" defer></script>
+    <!-- randaring normally for all element -->
+    <link rel="stylesheet" href="assets/css/normalmize.css" />
+    <!-- google font page  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FONT AWESOME library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- style guess word game page  -->
+    <link rel="stylesheet" href="assets/css/guessWord.css">
+    <!-- styling layout and responsive page  -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <!-- styling for compopnents  -->
+    <link rel="stylesheet" href="assets/css/components.css">
+    <!-- <link rel="stylesheet" href="../../css/main.css" /> -->
+
+</head>
+
+<body>
+    <div class="page">
+        <div id="header"></div>
+        <div id="main">
+            <h1></h1>
+            <div class="guss-game container">
+                <div class="game">
+                    <div class="inputs"></div>
+                    <p class="hint-message"></p>
+                    <div class="controls">
+                        <button class="check">Check Word</button>
+                        <button class="hint"><span></span> Hints</button>
+                    </div>
+                    <div class="message">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key-color">
+                    <h2>Key Color</h2>
+                    <div class="key in-place"><span></span>Letter Is Correct And In Place</div>
+                    <div class="key not-place"><span></span>Letter Is Correct But Not In Place</div>
+                    <div class="key no"><span></span>Letter Is Not Correct</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <!-- scripting the guess word game page  -->
+    <script src="assets/js/guessWord.js"></script>
+    <!-- script for layout  -->
+    <script src="assets/js/layout.js"></script>
+</body>
+
+</html>
